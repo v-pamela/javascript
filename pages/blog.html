@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Start -->
+    <meta name="description" content="Malmö is a fashion clothing store. You can see our New Collection and acquire a new garment for you. ">
+    <meta name="keywords" content="Clothes, Clothes for men, Fashion, Moda, Model, T-Shirt, Shirts, Pants, Jacket, Shoes">
+    <meta name="author" content="Valentin-Farias">
+    <meta name="copyright" content="Valentin-Farias">
+    <!-- SEO End -->
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.css" integrity="sha512-9nqhm3FWfB00id4NJpxK/wV1g9P2QfSsEPhSSpT+6qrESP6mpYbTfpC+Jvwe2XY27K5mLwwrqYuzqMGK5yC9/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- stylesheets -->
+    <link rel="icon" href="../img/logo/IconMalmo.png">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Blog - Malmö Clothes</title>
+</head>
+<body>
+    <!-- NavBar Start -->
+    <section id="header">
+        <a class="imgL" href="#"> <img src="../img/logo.png" class="logo" alt="Malmo Logo"></a>
+        <ul id="navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a class="active" href="./about.html">About</a></li>
+            <button id="bag" class="navbar-right normal" onclick="openBag()">
+                <li><a href="#"><i id="totalBag" class="fa fa-shopping-cart"></i><span id="numberOfProducts" class="badge">0</span></a></li>
+            </button>
+            <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+        </ul>
+        <div id="mobile">
+            <button id="bag" class="navbar-right normal" onclick="openBag()">
+                <li><a href="#"><i id="totalBag" class="fa fa-shopping-cart"></i><span id="numberOfProducts" class="badge">0</span></a></li>
+            </button>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <!-- NavBar End -->
+    <!-- Body Start-->
+    <!-- Cart Start-->
+    <section id="cartContainer" class="cartContainer">
+        <!-- products of cart -->
+        <div id="shoppingCart" class="shopping-cart">
+            <div id="total" class="shopping-cart-header">
+                <span>Products: </span>
+                <div id="totalContainer" class="shopping-cart-total">
+                    <span class="lighter-text">Total:</span>
+                    <span id="totalCart" class="main-color-text">$0.00</span>
+                </div>
+            </div>
+            <!--end shopping-cart-header -->
+
+            <div id="items" class="cartEmpty">
+                <span>Your cart is empty</span>
+            </div>
+
+            <template id="template-shopping-cart">
+                <ul class="shopping-cart-items">
+                    <li class="clearfix">
+                        <div class="btnRemove">
+                            <button id="remove" class="normal remove"><img src="../img/icons/cancel.png" alt="delete" class="delete"></button>
+                        </div>
+                        <div class="imageProduct">
+                            <img src="${product.image}" alt="${product.name}" class="principalProduct" style="display: flex;">
+                        </div>
+                        <div class="productDetailsCart">
+                            <h6 class="item-name">Sunflowers Shirt</h6>
+                            <div id="priceContainerCart">
+                                <h4 id="cartCurrency" class="item-price">$ </h4>
+                                <h4 id="cartPrice" class="item-price">ff</h4>
+                            </div>
+                            <h6 id="cartSize" class="item-size">Size:</h6>
+                            <div class="quantity">
+                                <button class="subtractQuantity">-</button>
+                                <span class="item-quantity">01</span>
+                                <button class="addQuantity">+</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </template>
+            <div class="shopping-checkout">
+                <button id="closeBag" class="normal closeBag" onclick="closeBag()">Close</button>
+                <form action="../pages/cart.html">
+                    <button id="checkoutBag" type="submit" class="normal">Checkout</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Cart End -->
+
+    <!-- Hero Image -->
+    <section id="page-header" class="blog-header">
+        <h2>#ReadMore</h2>
+        <p>Read all case studies about our products</p>
+    </section>
+    <!-- Hero Image End -->
+    <!-- Blog Content Start  -->
+    <section id="blog">
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="../img/blog/b1.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
+                <p>Kickstarter man braid godard coloring book. Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard...</p>
+                <a href="">CONTINUE READING</a>
+            </div>
+            <h1>03/09</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="../img/blog/b2.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Best Fragrances For Men</h4>
+                <p>Kickstarter man braid godard coloring book. Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard...</p>
+                <a href="">CONTINUE READING</a>
+            </div>
+            <h1>31/08</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="../img/blog/b3.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Must-Have Skater Men Items</h4>
+                <p>Kickstarter man braid godard coloring book. Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard...</p>
+                <a href="">CONTINUE READING</a>
+            </div>
+            <h1>27/08</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="../img/blog/b4.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>Accessory trends for men</h4>
+                <p>Kickstarter man braid godard coloring book. Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard...</p>
+                <a href="">CONTINUE READING</a>
+            </div>
+            <h1>23/08</h1>
+        </div>
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="../img/blog/b6.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4>AW20 Menswear Trends</h4>
+                <p>Kickstarter man braid godard coloring book. Raclette waistcoat selfies yr wolf chartreuse hexagon irony, godard...</p>
+                <a href="">CONTINUE READING</a>
+            </div>
+            <h1>19/08</h1>
+        </div>
+    </section>
+    <!-- Blog Content End  -->
+    <!-- Pagination Start -->
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
+    </section>
+    <!-- Pagination End -->
+    <!-- Newsletter Start -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="news-text">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mail updates about oir latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your Email Adress">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+    <!-- Newsletter End -->
+
+    <!-- Footer Start -->
+    <footer class="section-p1">
+        <div class="logoFooter">
+            <img src="../img/logo/Malmo.png" alt="Logo Malmo" class="logo">
+        </div>
+        <div class="col">
+            <div class="contactFooter">
+                <h4>Contact</h4>
+                <p class="p1"> <strong>Address: </strong>Istedgade 6, 1650, Copenhague.</p>
+                <p class="p2"><strong>Phone: </strong>+45 9832 3284</p>
+                <p class="p3"><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+                <div class="follow">
+                    <h4 class="usFollow">Follow us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutFooter">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="accountFooter">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="appFooter install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="../img/pay/app.jpg" alt="App Store">
+                    <img src="../img/pay/play.jpg" alt="Google Play">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <div class="securityPay">
+                    <img src="../img/pay/pay.png" alt="Payment Methods">
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2022, Valentín Farías - Front End Developer</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="../assets/navbar.js"></script>
+</body>
+</html>
