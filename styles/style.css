@@ -685,7 +685,7 @@ img.logo {
         justify-content: center;
         align-items: flex-end;
         text-align: center;
-        background-image: url('../img/banner/Banner.jpg');
+        background-image: url('../img/cremas.jpg');
         width: 100%;
         height: 40vh;
         background-size: cover;
@@ -722,11 +722,11 @@ img.logo {
     #banner button a{
         padding: 15px 30px;
         text-decoration: none;
-        color: #12605A;
+        color: #000000;
     }
 
     #banner button:hover {
-        background-color: #12605A;
+        background-color: #ffa50a;
         color: #fff;
     }
 
@@ -978,7 +978,7 @@ img.logo {
     #page-header {
         width: 100%;
         height: 40vh;
-        background-image: url('../img/banner/b1.jpg');
+        background-image: url('../img/serums2.jpg');
         background-size: cover;
         background-position: top 30% right 20%;
         display: flex;
@@ -990,7 +990,7 @@ img.logo {
 
     #page-header h2,
     #page-header p {
-        color: #fff;
+        color: #E9CBBF;
     }
     /* Header End */
     /* Pagination Start */
