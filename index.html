@@ -37,7 +37,6 @@
         </div>
     </section>
     <!-- NavBar End -->
-
     <!-- Cart Start-->
     <section id="cartContainer" class="cartContainer">
             <!-- products of cart -->
@@ -49,11 +48,9 @@
                         <span id="totalCart" class="main-color-text">$0.00</span>
                     </div>
                 </div> <!--end shopping-cart-header -->
-
                 <div id="items" class="cartEmpty">
                     <span>Your cart is empty</span>
                 </div>
-
                 <template id="template-shopping-cart">
                     <ul class="shopping-cart-items">
                         <li class="clearfix">
@@ -88,7 +85,6 @@
             </div>
     </section>
     <!-- Cart End -->
-
     <!-- Body Start-->
     <!-- Hero Image -->
     <section id="hero">
@@ -99,7 +95,6 @@
         <button><a href="#product1" >Shop Now</a></button>
     </section>
     <!-- Hero Image End -->
-
     <!-- Cards Start -->
     <section id="feature" class="section-p1">
         <div class="fe-box">
@@ -124,7 +119,6 @@
         </div>
     </section>
     <!-- Cards End -->
-
     <!-- Products Start -->
     <section id="product1" class="section-p1">
         <h2>Featured Products</h2>
@@ -132,15 +126,13 @@
         <div id="containerProd" class="pro-container">
             <div id="cards">
                 <!-- Products add in JS -->
-            </div>
-        </div>
-        <template id="template-card">
+
             <div class="pro">
                 <div id="btnOpenPopUp" class="openProductDetails">
-                    <img src="${product.image}" alt="${product.name}" class="principalProduct">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/f1.jpg" alt="${product.name}" class="principalProduct">
                     <div class="des">
-                        <span>${product.create}</span>
-                        <h5>${product.name}</h5>
+                        <span>Malmö</span>
+                        <h5>Sunflowers Shirt</h5>
                         <div class="star">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -149,78 +141,460 @@
                             <i class="fas fa-star"></i>
                         </div>
                         <div id="priceContainerFeatures">
-                            <h4 id="currencyFeatures">$ </h4>
-                            <h4 id="priceFeatures">{product.price}</h4>
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">38.99</h4>
                         </div>
-                        <h6 style="display: none;">${product.category}</h6>
+                        <h6 style="display: none;">Shirts</h6>
                     </div>
-                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()">Add To Cart</button>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="1">Add To Cart</button>
                 </div>
             </div>
-        </template>
-        <div id="modalAdd" class="modal">
-            <!-- Modal add in JS -->
-            <span>Not Found</span>
-        </div>
-        <template id="template-modal">
-            <div id="modalDetailsContainer" class="modalContainer">
-                <div class="closeModal" onclick="closeModal()">
-                    <i class="fa-solid fa-xmark closeModal" onclick="closeModal()"></i>
-                </div>
-                <div class="single-pro-details">
-                    <div class="imageProduct">
-                        <img src="./img/products/f1.jpg" id="cartImage" class="imageProdCart" alt="Product Image">
-                    </div>
-                    <h5 style="display: none;">Shirt</h5>
-                    <h6>Home / Shirts</h6>
-                    <h4>Sunflowers Shirts</h4>
-                    <div id="priceContainerModal">
-                        <h2 id="currencyModal">$ </h2>
-                        <h2 id="priceModal">{product.price}</h2>
-                    </div>
-                    <div class="selectSize">
-                        <select name="size" id="sizeSelect" placeholder="Select Size" required>
-                            <option value="Select Size" selected disabled>Select Size</option>
-                            <option value="XS" id="sizeValue" class="xs">XS</option>
-                            <option value="S" id="sizeValue" class="s">S</option>
-                            <option value="M" id="sizeValue" class="m">M</option>
-                            <option value="L" id="sizeValue" class="l">L</option>
-                            <option value="XL" id="sizeValue" class="xl">XL</option>
-                            <option value="XXL" id="sizeValue" class="xxl">XXL</option>
-                        </select>
-                    </div>
-                    <div class="quantityModal">
-                        <h6>Quantity:</h6>
-                        <button class="subtractQuantityModal">-</button>
-                        <span class="itemQuantityModal">1</span>
-                        <button class="addQuantityModal">+</button>
-                    </div>
-                    <button id="btnAddToCart" class="normal addToCart">Add To Cart</button>
-                    <h4 class="proDetails">Product Details</h4>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid debitis enim velit expedita dolorum culpa iure eaque possimus fuga.</span>
-                </div>
-            </div>
-        </template>
-    </section>
-    <!-- Products End -->
 
-    <!-- Banner Start -->
-    <section id="banner" class="section-m1">
-        <div class="description">
-            <h4>SUMMER SPECIAL</h4>
-            <h2>SALE</h2>
-            <button class="normal"><a href="./pages/shop.html">Explore More</a></button>
+            <div class="pro">
+                <div id="btnOpenPopUp" class="openProductDetails">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/f2.jpg" alt="${product.name}" class="principalProduct">
+                    <div class="des">
+                        <span>Malmö</span>
+                        <h5>Coconut Beach Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div id="priceContainerFeatures">
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">38.99</h4>
+                        </div>
+                        <h6 style="display: none;">Shirts</h6>
+                    </div>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="2">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div id="btnOpenPopUp" class="openProductDetails">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/f3.jpg" alt="${product.name}" class="principalProduct">
+                    <div class="des">
+                        <span>Malmö</span>
+                        <h5>Cést La Vie T-Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div id="priceContainerFeatures">
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">18.99</h4>
+                        </div>
+                        <h6 style="display: none;">T-Shirts</h6>
+                    </div>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="3">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div id="btnOpenPopUp" class="openProductDetails">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/f4.jpg" alt="${product.name}" class="principalProduct">
+                    <div class="des">
+                        <span>Malmö</span>
+                        <h5>Mawi T-Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div id="priceContainerFeatures">
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">18.99</h4>
+                        </div>
+                        <h6 style="display: none;">T-Shirts</h6>
+                    </div>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="4">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div id="btnOpenPopUp" class="openProductDetails">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/f5.jpg" alt="${product.name}" class="principalProduct">
+                    <div class="des">
+                        <span>Malmö</span>
+                        <h5>Pineapple Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div id="priceContainerFeatures">
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">38.99</h4>
+                        </div>
+                        <h6 style="display: none;">Shirts</h6>
+                    </div>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="5">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div id="btnOpenPopUp" class="openProductDetails">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/f6.jpg" alt="${product.name}" class="principalProduct">
+                    <div class="des">
+                        <span>Malmö</span>
+                        <h5>Multi-Brown Jacket</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div id="priceContainerFeatures">
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">52.99</h4>
+                        </div>
+                        <h6 style="display: none;">Jackets</h6>
+                    </div>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="6">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div id="btnOpenPopUp" class="openProductDetails">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/f7.jpg" alt="${product.name}" class="principalProduct">
+                    <div class="des">
+                        <span>Malmö</span>
+                        <h5>Stockholm Jacket</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div id="priceContainerFeatures">
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">52.99</h4>
+                        </div>
+                        <h6 style="display: none;">Jackets</h6>
+                    </div>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="7">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div id="btnOpenPopUp" class="openProductDetails">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/f8.jpg" alt="${product.name}" class="principalProduct">
+                    <div class="des">
+                        <span>Malmö</span>
+                        <h5>Classic Trousers</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div id="priceContainerFeatures">
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">25.99</h4>
+                        </div>
+                        <h6 style="display: none;">Trousers</h6>
+                    </div>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="8">Add To Cart</button>
+                </div>
+            </div>
         </div>
-    </section>
-    <!-- Banner End -->
-    <!-- New Arrivals Start -->
-    <section id="product1" class="section-p1">
-        <h2>New Arrivals</h2>
-        <p>Summer Collection - New Modern Design</p>
+        </div>
+        <template id="template-card">
+            <div class="pro">
+@@ -404,283 +220,7 @@ <h2>New Arrivals</h2>
         <div id="arrivalContainer" class="pro-container">
             <div id="cardsArrivals">
                 <!-- Products add in JS -->
+
+            <div class="pro">
+                <div id="btnOpenPopUp" class="openProductDetails">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/n1.jpg" alt="${product.name}" class="principalProduct">
+                    <div class="des">
+                        <span>Malmö</span>
+                        <h5>Chest Pocket T-Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div id="priceContainerFeatures">
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">38.99</h4>
+                        </div>
+                        <h6 style="display: none;">T-Shirts</h6>
+                    </div>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="9">Add To Cart</button>
+                </div>
             </div>
+
+            <div class="pro">
+                <div id="btnOpenPopUp" class="openProductDetails">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/n2.jpg" alt="${product.name}" class="principalProduct">
+                    <div class="des">
+                        <span>Malmö</span>
+                        <h5>Two-Tone Pants</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div id="priceContainerFeatures">
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">24.99</h4>
+                        </div>
+                        <h6 style="display: none;">Trousers</h6>
+                    </div>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="10">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div id="btnOpenPopUp" class="openProductDetails">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/n3.jpg" alt="${product.name}" class="principalProduct">
+                    <div class="des">
+                        <span>Malmö</span>
+                        <h5>Casual Loose Pants</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div id="priceContainerFeatures">
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">24.99</h4>
+                        </div>
+                        <h6 style="display: none;">Trousers</h6>
+                    </div>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="11">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div id="btnOpenPopUp" class="openProductDetails">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/n4.jpg" alt="${product.name}" class="principalProduct">
+                    <div class="des">
+                        <span>Malmö</span>
+                        <h5>Striped Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div id="priceContainerFeatures">
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">38.99</h4>
+                        </div>
+                        <h6 style="display: none;">Shirts</h6>
+                    </div>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="12">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div id="btnOpenPopUp" class="openProductDetails">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/n5.jpg" alt="${product.name}" class="principalProduct">
+                    <div class="des">
+                        <span>Malmö</span>
+                        <h5>Pineapple Set</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div id="priceContainerFeatures">
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">58.99</h4>
+                        </div>
+                        <h6 style="display: none;">Sets</h6>
+                    </div>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="13">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div id="btnOpenPopUp" class="openProductDetails">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/n6.jpg" alt="${product.name}" class="principalProduct">
+                    <div class="des">
+                        <span>Malmö</span>
+                        <h5>Multi-Lines Set</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div id="priceContainerFeatures">
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">58.99</h4>
+                        </div>
+                        <h6 style="display: none;">Sets</h6>
+                    </div>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="14">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div id="btnOpenPopUp" class="openProductDetails">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/n7.jpg" alt="${product.name}" class="principalProduct">
+                    <div class="des">
+                        <span>Malmö</span>
+                        <h5>Sunflower Up Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div id="priceContainerFeatures">
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">38.99</h4>
+                        </div>
+                        <h6 style="display: none;">Shirts</h6>
+                    </div>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="15">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div id="btnOpenPopUp" class="openProductDetails">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/n8.jpg" alt="${product.name}" class="principalProduct">
+                    <div class="des">
+                        <span>Malmö</span>
+                        <h5>Sun &amp; Moon Shirts</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div id="priceContainerFeatures">
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">38.99</h4>
+                        </div>
+                        <h6 style="display: none;">Shirts</h6>
+                    </div>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="16">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div id="btnOpenPopUp" class="openProductDetails">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/n9.jpg" alt="${product.name}" class="principalProduct">
+                    <div class="des">
+                        <span>Malmö</span>
+                        <h5>Three Color T-Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div id="priceContainerFeatures">
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">22.99</h4>
+                        </div>
+                        <h6 style="display: none;">T-Shirts</h6>
+                    </div>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="17">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div id="btnOpenPopUp" class="openProductDetails">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/n10.jpg" alt="${product.name}" class="principalProduct">
+                    <div class="des">
+                        <span>Malmö</span>
+                        <h5>Color Curve T-Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div id="priceContainerFeatures">
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">22.99</h4>
+                        </div>
+                        <h6 style="display: none;">T-Shirts</h6>
+                    </div>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="18">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div id="btnOpenPopUp" class="openProductDetails">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/n11.jpg" alt="${product.name}" class="principalProduct">
+                    <div class="des">
+                        <span>Malmö</span>
+                        <h5>Tomorrow T-Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div id="priceContainerFeatures">
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">24.99</h4>
+                        </div>
+                        <h6 style="display: none;">T-Shirts</h6>
+                    </div>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="19">Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pro">
+                <div id="btnOpenPopUp" class="openProductDetails">
+                    <img src="https://raw.githubusercontent.com/Nelav99/Malmo-Clothes-Valentin-Farias/main/img/products/n12.jpg" alt="${product.name}" class="principalProduct">
+                    <div class="des">
+                        <span>Malmö</span>
+                        <h5>NASA T-Shirt</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div id="priceContainerFeatures">
+                            <h4 id="currencyFeatures">$</h4>
+                            <h4 id="priceFeatures">24.99</h4>
+                        </div>
+                        <h6 style="display: none;">T-Shirts</h6>
+                    </div>
+                    <button id="btnSetModal" class="normal viewDetails" onclick="openModal()" data-id="20">Add To Cart</button>
+                </div>
+            </div>
+        </div>
             <template id="template-card-arrivals">
                 <div class="pro" >
                     <div class="openProductDetails"" onclick="openModal()">
@@ -248,7 +622,6 @@
     </section>
     <!-- New Arrivals End -->
     
-
     <!-- Newsletter Start -->
     <section id="newsletter" class="section-p1 section-m1">
         <div class="news-text">
@@ -312,7 +685,6 @@
                 </div>
             </div>
         </div>
-
         
     </footer>
     <!-- Footer End -->
